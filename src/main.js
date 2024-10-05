@@ -1,18 +1,21 @@
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
-import { createVuetify } from 'vuetify'  // นำเข้า Vuetify
-import 'vuetify/styles'  // นำเข้าสตไตล์หลักของ Vuetify
-import * as components from 'vuetify/components'  // นำเข้าคอมโพเนนต์ทั้งหมด
-import * as directives from 'vuetify/directives'  // นำเข้า directives ของ Vuetify
+// main.js
 
-const vuetify = createVuetify({
-  components,
-  directives,
-})
+// Plugins
+import { registerPlugins } from '@/plugins'
+
+// Components
+import App from './App.vue'
+import 'vuetify/styles' // นำเข้าสไตล์ของ Vuetify
+import { createApp } from 'vue'
+import { createVuetify } from 'vuetify' // นำเข้า createVuetify
+import 'swiper/swiper-bundle.css';
+import VCalendar from 'v-calendar';
+import 'v-calendar/style.css';
+import vuetify from './plugins/vuetify'
 
 const app = createApp(App)
 
-app.use(router)  // ใช้ router ในแอป
-app.use(vuetify) // ใช้ Vuetify ในแอป
+app.use(vuetify)
+app.use(VCalendar, {})
+registerPlugins(app)
 app.mount('#app')

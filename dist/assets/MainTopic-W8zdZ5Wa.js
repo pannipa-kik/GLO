@@ -1,0 +1,1 @@
+import{W as e,a1 as r,a7 as a}from"./index-C7MlE0T8.js";const s={class:"primary_ฺblue"},i={__name:"MainTopic",props:{text:{type:String,required:!0}},setup(t){return(o,c)=>(e(),r("h2",s,a(t.text),1))}};export{i as _};

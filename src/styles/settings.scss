@@ -1,0 +1,86 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+// https://vuetifyjs.com/features/sass-variables/`
+// @use 'vuetify/settings' with (
+//   $color-pack: false
+// );
+
+@font-face {
+    font-family: 'Kanit';
+    src: url('../assets/fonts/Kanit-Black.woff2') format('woff2'),
+         url('../assets//fonts/Kanit-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+  
+html,
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+#app {
+    font-family: 'Kanit', sans-serif;
+}
+  
+a{
+    cursor: pointer;
+}
+// color
+.primary_ฺblue{
+    color: #0033A1 !important;
+}
+
+.secondary {
+    color: #595D62;
+}
+
+.primary_ฺamber{
+    color: #FD9B3A;
+}
+
+.primary_turquoise {
+    color: #00C6BE !important;
+}
+
+.primary_pinks {
+    color: #FE6A7C !important;
+}
+
+
+.bg_primary_ฺamber{
+    background: #FD9B3A;
+}
+
+
+.bg_primary_ฺblue{
+    background: #0033A1 !important;
+}
+
+.bg {
+    background: #F5F5F5;
+}
+
+@media (min-width: 1920px) {
+    .v-container {
+        max-width: 1140px !important;
+    }
+}
+
+h3 {
+    font-weight: 600 !important;
+  }
+  
+  
+h4 {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+ .vc-bordered {
+    font-family: "Kanit", sans-serif !important;
+}
